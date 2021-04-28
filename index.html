@@ -12,9 +12,19 @@
         <h1 id="title">Our <strong>Survey</strong> Form</h1>
         <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt a velit, deserunt animi labore rem odio pariatur tempore quisquam!</p>
        <form action="" id="survey-form">
-           <input type="text" id="name">
-           <input type="email" id="email"  placeholder="email">
-           <input type="number" id="number" required>
+           <label for="name-label">Name</label>
+           <input type="text" id="name" name="name-label" placeholder="Name">
+           <label for="email-label">Email</label>
+           <input type="email" id="email"  name="email-label" placeholder="Email" pattern="email@example.com">
+           <label for="number-label">Number</label>
+           <input type="number" id="number" name="number-label" min="9" max="15" placeholder="Num" required>
+           <label for="dropdown-label">Choose a number:</label>
+                <select name="dropdown-label" id="dropdown">
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+                <option value="four">Four</option>
+                </select>
        </form>
     </div>
     
