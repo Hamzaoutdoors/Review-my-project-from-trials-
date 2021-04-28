@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1 id="title">Our <strong>Survey</strong> Form</h1>
-        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt a velit, deserunt animi labore rem odio pariatur tempore quisquam!</p>
+        <p id="description">You want to know more about our coffee? Send us a message.</p>
        <form action="" id="survey-form">
            <label for="name-label">Name</label>
            <input type="text" id="name" name="name-label" placeholder="Name">
@@ -18,8 +18,9 @@
            <input type="email" id="email"  name="email-label" placeholder="Email" pattern="email@example.com">
            <label for="number-label">Number</label>
            <input type="number" id="number" name="number-label" min="9" max="15" placeholder="Num" required>
-           <label for="dropdown-label">Choose a number:</label>
-                <select name="dropdown-label" id="dropdown">
+           <div class="dropdown">
+            <label for="dropdown-label">Choose a number:</label>
+            <select name="dropdown-label" id="dropdown">
                 <option value="9">9</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
@@ -27,47 +28,40 @@
                 <option value="13">13</option>
                 <option value="14">14</option>
                 <option value="15">15</option>
-                </select>
-                <>
-                    <h2>Contact Us</h2>
-                    <h3>choose your method</h3>
-                    <div>
+            </select>
+           </div>
+
+                <h2>Contact Us</h2>
+                <h3>Choose your method</h3>
+                <div class="radio">
                     <input type="radio" id="radio-name" name="social-media" value="facebook" checked>
                     <label for="facebook">Facebook</label>
-                  </div>
-                  <div>
-                      <input type="radio" id="radio-name" name="social-media" value="instagram">
-                      <label for="instagram">Instagram</label>
-                  </div>
-                  <div>
-
-                      <input type="radio" id="radio-name" name="social-media" value="linkedIn">
-                      <label for="linkedIn">LinkedIn</label>
-                  </div>
-
-                 <br>
-                 <br>
-                 <h2>coffee Shop</h2>
-                 <h3>choose your coffee</h3>
-                <div>
-                    <input type="checkbox" id="coffee-es" name="Espresso" checked>
-                    <label for="scales">Espresso</label>
-                  </div>
-                <div>
-                    <input type="checkbox" id="coffe-cap" name="Cappuccino" checked>
-                    <label for="Cappuccino">Cappuccino</label>
-                  </div>
-                <div>
-                    <input type="checkbox" id="late" name="Late" checked>
+                    <input type="radio" id="radio-name" name="social-media" value="instagram">
+                    <label for="instagram">Instagram</label>
+                    <input type="radio" id="radio-name" name="social-media" value="linkedIn">
+                    <label for="linkedIn">LinkedIn</label>
+                </div>
+                <br>
+                <br>
+                <h2>coffee Shop</h2>
+                <h3>choose your coffee</h3>
+                <div class="checkbox">
+                    <input type="checkbox" id="coffee-es" name="coffee-selection">
+                    <label for="coffee-es">Espresso</label>
+                    <input type="checkbox" id="coffee-cap" name="coffee-selection">
+                    <label for="coffee-cap">Cappuccino</label>
+                    <input type="checkbox" id="late" name="coffee-selection">
                     <label for="late">late</label>
-                  </div>
-
-                  <h2>Write us something more about your favourite Coffee</h2>
-                  <div class="textarea">
-
-                      <textarea name="" id="" cols="50" rows="20"></textarea>
-                      <button type="submit">Submit please</button>
-                  </div>
+                </div>
+                <div class="last-div">
+                    <div class="last-div-1">
+                        <h2>Write us something more about your favourite Coffee</h2>
+                    </div>
+                    <div class="textarea">
+                        <textarea name="" id="" cols="50" rows="20"></textarea>
+                    </div>
+                </div>
+                <div><button type="submit">Submit please</button></div>                
        </form>
     </div>
     
