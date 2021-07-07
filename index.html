@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h1 id="title">Our <strong>Survey</strong> Form</h1>
-      
+
       <!-- <section id="hero">
         <div class="hero container">
           <div>
@@ -25,10 +25,15 @@
       <p id="description">
         You want to know more about our coffee? Send us a message.
       </p>
-      <form action="" id="survey-form">
-        <label for="name-label">Name</label>
-        <input type="text" id="name" name="name-label" placeholder="Name" />
-        <label for="email-label">Email</label>
+      <form id="survey">
+        <label for="survey-form">Name</label>
+        <input
+          type="text"
+          id="survey-form"
+          name="name-label"
+          placeholder="Name"
+        />
+        <label for="email">Email</label>
         <input
           type="email"
           id="email"
@@ -39,7 +44,7 @@
         <label for="number-label">Number</label>
         <input
           type="number"
-          id="number"
+          id="number-label"
           name="number-label"
           min="9"
           max="15"
@@ -47,7 +52,7 @@
           required
         />
         <div class="dropdown">
-          <label for="dropdown-label">Choose a number:</label>
+          <label for="dropdown">Choose a number:</label>
           <select name="dropdown-label" id="dropdown">
             <option value="9">9</option>
             <option value="10">10</option>
@@ -72,18 +77,17 @@
           <label for="facebook">Facebook</label>
           <input
             type="radio"
-            id="radio-name"
+            id="facebook"
             name="social-media"
             value="instagram"
           />
           <label for="instagram">Instagram</label>
           <input
             type="radio"
-            id="radio-name"
+            id="instagram"
             name="social-media"
             value="linkedIn"
           />
-          <label for="linkedIn">LinkedIn</label>
         </div>
         <br />
         <br />
@@ -102,7 +106,7 @@
             <h2>Write us something more about your favourite Coffee</h2>
           </div>
           <div class="textarea">
-            <textarea name="" id="" cols="50" rows="20"></textarea>
+            <textarea  cols="50" rows="20"></textarea>
           </div>
         </div>
         <div><button type="submit">Submit please</button></div>
